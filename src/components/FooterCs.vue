@@ -13,12 +13,12 @@
     </div>
 
     <div class="pt-2">
-      <p>Construído com ❤️ usando <strong>Vuetify</strong>. Conecte-se comigo nas redes sociais!</p>
+      <p>Construído com ❤️ por <strong>mim</strong>. Conecte-se comigo nas redes sociais!</p>
     </div>
 
     <v-divider class="my-2"></v-divider>
 
-    <div>&copy; {{ new Date().getFullYear() }} — <strong>Meu Portfólio</strong></div>
+    <div>&copy; {{ new Date().getFullYear() }} </div>
   </v-footer>
 </template>
 

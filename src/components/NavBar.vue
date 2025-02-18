@@ -10,16 +10,14 @@
           <v-app-bar-nav-icon></v-app-bar-nav-icon>
         </template>
 
-        <v-app-bar-title>
-          Oi, sou Alice
-          <v-icon>mdi-star-outline</v-icon>
-        </v-app-bar-title>
+        <v-app-bar-title>Oi, sou Alice <v-icon>mdi-star-outline</v-icon></v-app-bar-title>
 
         <v-spacer></v-spacer>
 
-        <v-btn v-for="link in menuLinks" :key="link.text" @click="scrollToSection(link.href)">
-          {{ link.text }}
-        </v-btn>
+        <v-btn variant="text" @click="scrollTo('hero')">Home</v-btn>
+        <v-btn variant="text" @click="scrollTo('about')">Sobre</v-btn>
+        <v-btn variant="text" @click="scrollTo('projects')">Projetos</v-btn>
+        <v-btn variant="text" @click="scrollTo('contact')">Contato</v-btn>
 
         <v-btn icon>
           <v-icon>mdi-dots-vertical</v-icon>
@@ -29,35 +27,11 @@
   </v-card>
 </template>
 
-<script lang="ts">
-export default {
-  data: () => ({
-    menuLinks: [
-      { text: 'Início', href: 'hero' },
-      { text: 'Sobre', href: 'about' },
-      { text: 'Projetos', href: 'projects' },
-      { text: 'Contato', href: 'contact' },
-    ],
-  }),
-  methods: {
-    scrollToSection(sectionId: string) {
-      const element = document.getElementById(sectionId)
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' })
-      }
-    },
-  },
+<script setup lang="ts">
+const scrollTo = (id: string) => {
+  const element = document.getElementById(id)
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' })
+  }
 }
 </script>
-
-<style scoped>
-.v-app-bar {
-  width: 100%;
-}
-
-.v-app-bar-title {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-</style>

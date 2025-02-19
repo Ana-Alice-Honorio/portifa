@@ -3,7 +3,7 @@
     <section id="hero"><HeroComp /></section>
     <section id="about"><AboutMe /></section>
     <section id="projects"><MyProjects /></section>
-    <section id="contact"><ContactMe /></section>
+    <section id="contact"><FooterCs /></section>
   </main>
 </template>
 
@@ -11,7 +11,7 @@
 import HeroComp from '../components/HeroComp.vue'
 import AboutMe from '../components/AboutMe.vue'
 import MyProjects from '../components/MyProjects.vue'
-import ContactMe from '../components/ContactMe.vue'
+import FooterCs from '../components/FooterCs.vue'
 </script>
 
 <style scoped>

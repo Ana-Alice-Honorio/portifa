@@ -3,8 +3,8 @@
     <v-row align="center" justify="center">
       <v-col cols="12" md="6">
         <div class="hero-text">
-          <h1>Oi, eu sou Alice!</h1>
-          <p>Desenvolvedora apaixonada por tecnologia, UI/UX e inovação.</p>
+          <h1>{{ $t('hero.title') }}</h1>
+          <p>{{ $t('hero.subtitle') }}</p>
           <v-btn
             color="primary"
             variant="flat"
@@ -13,7 +13,7 @@
             download
           >
             <v-icon left>mdi-download</v-icon>
-            Currículo
+            {{ $t('hero.curriculum') }}
           </v-btn>
         </div>
       </v-col>

@@ -10,14 +10,14 @@
           <v-app-bar-nav-icon></v-app-bar-nav-icon>
         </template>
 
-        <v-app-bar-title>Oi, sou Alice <v-icon>mdi-star-outline</v-icon></v-app-bar-title>
+        <v-app-bar-title>{{ $t('menu.title') }}<v-icon>mdi-star-outline</v-icon></v-app-bar-title>
 
         <v-spacer></v-spacer>
 
-        <v-btn variant="text" @click="scrollTo('hero')">Home</v-btn>
-        <v-btn variant="text" @click="scrollTo('about')">Sobre</v-btn>
-        <v-btn variant="text" @click="scrollTo('projects')">Projetos</v-btn>
-        <v-btn variant="text" @click="scrollTo('contact')">Contato</v-btn>
+        <v-btn variant="text" @click="scrollTo('hero')">{{ $t('menu.navbar.home') }}</v-btn>
+        <v-btn variant="text" @click="scrollTo('about')">{{ $t('menu.navbar.about') }}</v-btn>
+        <v-btn variant="text" @click="scrollTo('projects')">{{ $t('menu.navbar.projects') }}</v-btn>
+        <v-btn variant="text" @click="scrollTo('contact')">{{ $t('menu.navbar.contact') }}</v-btn>
 
         <v-btn icon>
           <v-icon>mdi-dots-vertical</v-icon>

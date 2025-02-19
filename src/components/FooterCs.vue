@@ -13,12 +13,15 @@
     </div>
 
     <div class="pt-2">
-      <p>Construído com ❤️ por <strong>mim</strong>. Conecte-se comigo nas redes sociais!</p>
+      <p>
+        {{ $t('footer.title') }}<strong>{{ $t('footer.me') }}</strong
+        >{{ $t('footer.conect') }}
+      </p>
     </div>
 
     <v-divider class="my-2"></v-divider>
 
-    <div>&copy; {{ new Date().getFullYear() }} </div>
+    <div>&copy; {{ new Date().getFullYear() }}</div>
   </v-footer>
 </template>
 

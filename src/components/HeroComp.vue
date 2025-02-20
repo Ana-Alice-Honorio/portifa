@@ -6,7 +6,7 @@
           <h1>{{ $t('hero.title') }}</h1>
           <p>{{ $t('hero.subtitle') }}</p>
           <v-btn
-            color="primary"
+            color="rgb(134, 101, 186)"
             variant="flat"
             :href="'/docs/Ana.Alice.Honorio-Frontend.pdf'"
             target="_blank"
@@ -55,6 +55,7 @@
   text-transform: capitalize;
   font-family: 'Capriola', sans-serif;
   max-width: 200px;
+  background-color: bg-indigo-lighten-1;
 }
 
 .gif-frame {

@@ -1,13 +1,9 @@
 <template>
-  <v-card class="mx-auto" color="grey-lighten-3" max-width="100%">
+  <v-card class="mx-auto" max-width="100%">
     <v-layout>
-      <v-app-bar color="teal-darken-4" image="https://picsum.photos/1920/1080?random">
+      <v-app-bar color="teal-darken-4">
         <template v-slot:image>
-          <v-img gradient="to top right, rgba(19,84,122,.8), rgba(128,208,199,.8)"></v-img>
-        </template>
-
-        <template v-slot:prepend>
-          <v-app-bar-nav-icon></v-app-bar-nav-icon>
+          <v-img gradient="to top right, rgb(134, 101, 186),  #3f51b5"></v-img>
         </template>
 
         <v-app-bar-title class="name"

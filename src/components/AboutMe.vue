@@ -4,19 +4,11 @@
       <v-img
         color="surface-variant"
         height="200"
-        src="https://cdn.vuetifyjs.com/docs/images/cards/purple-flowers.jpg"
+        src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExczlxbTBzOHJsZDByODRyYmVua3F6bmR6MXoyYm9jZjF1ZjI3dWRmdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kBa3lyXcK5pcOJDUkW/giphy.gif"
         cover
       >
         <v-toolbar color="transparent">
-          <template v-slot:prepend>
-            <v-btn icon="$menu"></v-btn>
-          </template>
-
-          <v-toolbar-title class="text-h6" text="Messages"></v-toolbar-title>
-
-          <template v-slot:append>
-            <v-btn icon="mdi-dots-vertical"></v-btn>
-          </template>
+          <v-toolbar-title class="text-h6"></v-toolbar-title>
         </v-toolbar>
       </v-img>
 

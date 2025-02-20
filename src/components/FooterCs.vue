@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="bg-indigo-lighten-1 text-center d-flex flex-column">
+  <v-footer class="body-footer text-center d-flex flex-column">
     <div class="social-icons">
       <v-btn
         v-for="icon in socialLinks"
@@ -48,5 +48,10 @@ export default {
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+
+.body-footer {
+  background-color: rgb(134, 101, 186);
+  color: white;
 }
 </style>

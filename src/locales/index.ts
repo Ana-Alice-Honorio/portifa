@@ -8,7 +8,7 @@ const messages = {
   },
   pt: {
     menu: {
-      title: 'Oi, sou Alice',
+      title: 'Alice',
       navbar: {
         home: 'Home',
         about: 'Sobre',

@@ -10,14 +10,24 @@
           <v-app-bar-nav-icon></v-app-bar-nav-icon>
         </template>
 
-        <v-app-bar-title>{{ $t('menu.title') }}<v-icon>mdi-star-outline</v-icon></v-app-bar-title>
+        <v-app-bar-title class="name"
+          >{{ $t('menu.title') }}<v-icon>mdi-star-outline</v-icon></v-app-bar-title
+        >
 
         <v-spacer></v-spacer>
 
-        <v-btn variant="text" @click="scrollTo('hero')">{{ $t('menu.navbar.home') }}</v-btn>
-        <v-btn variant="text" @click="scrollTo('about')">{{ $t('menu.navbar.about') }}</v-btn>
-        <v-btn variant="text" @click="scrollTo('projects')">{{ $t('menu.navbar.projects') }}</v-btn>
-        <v-btn variant="text" @click="scrollTo('contact')">{{ $t('menu.navbar.contact') }}</v-btn>
+        <v-btn variant="text" @click="scrollTo('hero')" class="capriola-text">{{
+          $t('menu.navbar.home')
+        }}</v-btn>
+        <v-btn variant="text" @click="scrollTo('about')" class="capriola-text">{{
+          $t('menu.navbar.about')
+        }}</v-btn>
+        <v-btn variant="text" @click="scrollTo('projects')" class="capriola-text">{{
+          $t('menu.navbar.projects')
+        }}</v-btn>
+        <v-btn variant="text" @click="scrollTo('contact')" class="capriola-text">{{
+          $t('menu.navbar.contact')
+        }}</v-btn>
 
         <v-btn icon>
           <v-icon>mdi-dots-vertical</v-icon>
@@ -35,3 +45,16 @@ const scrollTo = (id: string) => {
   }
 }
 </script>
+
+<style scoped>
+.name {
+  font-family: 'Capriola', sans-serif;
+  font-size: 20px;
+}
+
+.capriola-text {
+  font-family: 'Capriola', sans-serif;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+</style>

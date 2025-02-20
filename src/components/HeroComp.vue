@@ -11,6 +11,7 @@
             :href="'/docs/Ana.Alice.Honorio-Frontend.pdf'"
             target="_blank"
             download
+            class="btn"
           >
             <v-icon left>mdi-download</v-icon>
             {{ $t('hero.curriculum') }}
@@ -41,6 +42,19 @@
 .hero-text {
   text-align: left;
   max-width: 500px;
+  font-family:
+    'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+    sans-serif;
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  gap: 5px;
+}
+
+.btn {
+  text-transform: capitalize;
+  font-family: 'Capriola', sans-serif;
+  max-width: 200px;
 }
 
 .gif-frame {

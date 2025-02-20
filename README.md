@@ -32,7 +32,7 @@ Este projeto tem como objetivo ser meu portfólio como desenvolvedora web. Nele 
 - [Eslint](https://eslint.org/) para ajudar a encontrar e corrigir problemas em Javascript
 - [Prettier](https://prettier.io/) para formatação de código
 - [Vite](https://vite.dev/guide/) para rapidez no build
-
+- [Vue i18n](https://vue-i18n.intlify.dev/) para internalização de texto
 
 ## 🛠 Recomendação de Setup e IDE
 

@@ -41,6 +41,9 @@ const scrollTo = (id: string) => {
 <style scoped>
 .header {
   padding: 8px;
+  position: fixed;
+  left: 0;
+  z-index: 100;
 }
 
 .name {

@@ -104,6 +104,8 @@ const technologies = ref<Technology[]>([
   { name: 'PostgreSQL', icon: 'mdi-database', color: '#336791' },
   { name: 'MySQL', icon: 'mdi-database', color: '#00758f' },
   { name: 'Linux', icon: 'mdi-linux', color: '#323b4f' },
+  { name: 'HTML', icon: 'mdi-language-html5', color: '#D2691E' },
+  { name: 'CSS', icon: 'mdi-language-css3', color: '#1E90FF' },
 ])
 
 const experiences = ref<Experiences[]>([

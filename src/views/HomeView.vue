@@ -17,7 +17,7 @@ import FooterCs from '../components/FooterCs.vue'
 <style scoped>
 .home-container {
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  overflow-y: visible;
   height: 100vh;
 }
 

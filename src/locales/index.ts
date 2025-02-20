@@ -18,13 +18,20 @@ const messages = {
     },
     hero: {
       title: 'Oi, eu sou Alice!',
-      subtitle: 'Desenvolvedora apaixonada por tecnologia, UI/UX e inovação.',
-      curriculum: 'Currículo',
+      text: 'Sou uma desenvolvedora apaixonada por tecnologia, com experiência em desenvolvimento web. Trabalho com <strong>Vue.js</strong/>, <strong> Javascript </strong/> e outras tecnologias para criar aplicações incríveis.',
+      texttwo:
+        'Tenho experiência com <strong>desenvolvimento de software</strong>, <strong>resolução de problemas</strong> complexos e atendimento ao usuário do software.',
     },
     footer: {
       title: 'Construído com ❤️ por ',
       me: 'mim',
       conect: '. Conecte-se comigo nas redes sociais!',
+    },
+    about: {
+      xp: 'Experiências',
+      curriculum: 'Currículo',
+      techs: 'Tecnologias:',
+      text: 'Sou uma profissional da área de TI cursando o 3° período de <strong>Análise e Desenvolvimento de Sistemas</strong>, onde aprendo sobre as melhores práticas e <strong>metodologias</strong> de desenvolvimento de software. Atualmente, estou me aprimorando e tenho um grande interesse em <strong>infra/DevOps</strong>, buscando sempre me atualizar e expandir meus conhecimentos nessa área.',
     },
   },
 }

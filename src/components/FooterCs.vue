@@ -51,7 +51,7 @@ export default {
 }
 
 .body-footer {
-  background-color: rgb(134, 101, 186);
+  background: linear-gradient(90deg, rgb(134, 101, 186), #3f51b5);
   color: white;
 }
 </style>

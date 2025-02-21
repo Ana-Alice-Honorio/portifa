@@ -1,28 +1,30 @@
 <template>
-  <v-footer class="body-footer text-center d-flex flex-column">
-    <div class="social-icons">
-      <v-btn
-        v-for="icon in socialLinks"
-        :key="icon.name"
-        :href="icon.url"
-        target="_blank"
-        :icon="icon.icon"
-        class="mx-2"
-        variant="text"
-      ></v-btn>
-    </div>
+  <section id="contact">
+    <v-footer class="body-footer text-center d-flex flex-column">
+      <div class="social-icons">
+        <v-btn
+          v-for="icon in socialLinks"
+          :key="icon.name"
+          :href="icon.url"
+          target="_blank"
+          :icon="icon.icon"
+          class="mx-2"
+          variant="text"
+        ></v-btn>
+      </div>
 
-    <div class="pt-2">
-      <p>
-        {{ $t('footer.title') }}<strong>{{ $t('footer.me') }}</strong
-        >{{ $t('footer.conect') }}
-      </p>
-    </div>
+      <div class="pt-2">
+        <p>
+          {{ $t('footer.title') }}<strong>{{ $t('footer.me') }}</strong
+          >{{ $t('footer.conect') }}
+        </p>
+      </div>
 
-    <v-divider class="my-2"></v-divider>
+      <v-divider class="my-2"></v-divider>
 
-    <div>&copy; {{ new Date().getFullYear() }}</div>
-  </v-footer>
+      <div>&copy; {{ new Date().getFullYear() }}</div>
+    </v-footer>
+  </section>
 </template>
 
 <script lang="ts">
@@ -44,6 +46,10 @@ export default {
 </script>
 
 <style scoped>
+#contact {
+  background: #f5fffa;
+}
+
 .social-icons {
   display: flex;
   justify-content: center;

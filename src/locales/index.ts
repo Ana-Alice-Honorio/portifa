@@ -33,6 +33,9 @@ const messages = {
       techs: 'Tecnologias:',
       text: 'Sou uma profissional da área de TI cursando o 3° período de <strong>Análise e Desenvolvimento de Sistemas</strong>, onde aprendo sobre as melhores práticas e <strong>metodologias</strong> de desenvolvimento de software. Atualmente, estou me aprimorando e tenho um grande interesse em <strong>infra/DevOps</strong>, buscando sempre me atualizar e expandir meus conhecimentos nessa área.',
     },
+    projects: {
+      title: 'Projetos recentes',
+    },
   },
 }
 

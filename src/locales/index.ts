@@ -35,6 +35,9 @@ const messages = {
     },
     projects: {
       title: 'Projetos recentes',
+      subtitle: 'Aqui estão alguns dos meus projetos mais recentes. Clique para ver mais detalhes.',
+      github: 'Código',
+      deploy: 'Deploy',
     },
   },
 }

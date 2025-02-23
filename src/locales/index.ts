@@ -26,6 +26,11 @@ const messages = {
       title: 'Construído com ❤️ por ',
       me: 'mim',
       conect: '. Conecte-se comigo nas redes sociais!',
+      cards: {
+        title: 'Aprendizado & Conteúdo',
+        courses: 'Cursos Realizados',
+        see: '<a href="https://github.com/Ana-Alice-Honorio" target="_blank"> Ver Curso</a>',
+      },
     },
     about: {
       xp: 'Experiências',

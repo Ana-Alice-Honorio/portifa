@@ -92,6 +92,10 @@ const projects = ref<Project[]>([
   padding-left: 20px;
 }
 
+.project-text h1 {
+  font-size: 25px;
+}
+
 .project-carousel {
   flex: 1;
   padding: 20px;

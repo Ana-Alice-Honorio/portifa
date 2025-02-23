@@ -5,7 +5,7 @@
         <v-col cols="12" md="6">
           <div class="project-text">
             <h1>{{ $t('projects.title') }}</h1>
-            <p>{{ $t('projects.subtitle') }}</p>
+            <p v-html="$t('projects.subtitle')"></p>
           </div>
         </v-col>
 

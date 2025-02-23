@@ -35,7 +35,8 @@ const messages = {
     },
     projects: {
       title: 'Projetos recentes',
-      subtitle: 'Aqui estão alguns dos meus projetos mais recentes. Clique para ver mais detalhes.',
+      subtitle:
+        'Aqui estão alguns dos meus projetos mais recentes. <a href="https://github.com/Ana-Alice-Honorio" target="_blank">Clique</a> para ver os demais.',
       github: 'Código',
       deploy: 'Deploy',
     },

@@ -6,6 +6,7 @@
           <div class="project-text">
             <h1>{{ $t('projects.title') }}</h1>
             <p v-html="$t('projects.subtitle')"></p>
+            <p v-html="$t('projects.link')"></p>
           </div>
         </v-col>
 
@@ -58,16 +59,40 @@ interface Project {
 
 const projects = ref<Project[]>([
   {
-    name: 'Projeto 1',
-    deployLink: 'https://deploy-projeto1.com',
-    githubLink: 'https://github.com/username/projeto1',
+    name: 'Linktree',
+    deployLink: 'https://geek-in-code.vercel.app/',
+    githubLink: 'https://github.com/Ana-Alice-Honorio/linktree-insta',
+    image: 'https://github.com/Ana-Alice-Honorio/linktree-insta/raw/main/assets/images/image.png',
+  },
+  {
+    name: 'Books Store',
+    deployLink: 'https://deploy-projeto2.com',
+    githubLink: 'https://github.com/Ana-Alice-Honorio/books-store',
     image: 'https;//url-da imagem',
   },
   {
-    name: 'Projeto 2',
+    name: 'Todo Flow',
     deployLink: 'https://deploy-projeto2.com',
-    githubLink: 'https://github.com/username/projeto2',
-    image: 'https;//url-da imagem',
+    githubLink: 'https://github.com/Ana-Alice-Honorio/todo-flow',
+    image: 'https://github.com/Ana-Alice-Honorio/todo-flow/raw/main/public/todo-task.png',
+  },
+  {
+    name: 'Coin Wise',
+    deployLink: 'https://deploy-projeto2.com',
+    githubLink: 'https://github.com/Ana-Alice-Honorio/coinWise',
+    image: 'https://github.com/Ana-Alice-Honorio/coinWise/raw/main/public/coin%20wise.png',
+  },
+  {
+    name: 'Deep Space',
+    deployLink: 'https://deploy-projeto2.com',
+    githubLink: 'https://github.com/Ana-Alice-Honorio/deep-space-store',
+    image: 'https://github.com/Ana-Alice-Honorio/coinWise/raw/main/public/coin%20wise.png',
+  },
+  {
+    name: 'EcoVue',
+    deployLink: 'https://deploy-projeto2.com',
+    githubLink: 'https://github.com/Ana-Alice-Honorio/EcoVue',
+    image: 'https://github.com/Ana-Alice-Honorio/coinWise/raw/main/public/coin%20wise.png',
   },
 ])
 </script>

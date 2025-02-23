@@ -12,7 +12,7 @@
                   <strong>{{ course.title }}</strong> - {{ course.platform }}
                 </v-list-item-title>
                 <v-list-item-subtitle>
-                  <a :href="course.link" target="_blank" v-html="$t('footer.cards.see')"></a>
+                  <a :href="course.link" target="_blank">{{ $t('footer.cards.see') }}</a>
                 </v-list-item-subtitle>
               </v-list-item>
             </v-list>
@@ -66,7 +66,38 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+import axios from 'axios'
+import xml2js from 'xml-js'
+
+interface BlogPost {
+  title: string
+  date: string
+  link: string
+}
+
+const blogPosts = ref<BlogPost[]>([])
+
+const fetchMediumPosts = async () => {
+  try {
+    const response = await axios.get(
+      'https://api.allorigins.win/get?url=' +
+        encodeURIComponent('https://medium.com/feed/@anaalicehonorio'),
+    )
+    const data = xml2js.xml2json(response.data.contents, { compact: true, spaces: 2 })
+    const parsedData = JSON.parse(data)
+
+    blogPosts.value = parsedData.rss.channel.item.slice(0, 10).map((post) => ({
+      title: post.title._cdata || post.title._text,
+      link: post.link._text,
+      date: new Date(post.pubDate._text).toLocaleDateString('pt-BR'),
+    }))
+  } catch (error) {
+    console.error('Erro ao buscar posts do Medium:', error)
+  }
+}
+
+onMounted(fetchMediumPosts)
 
 interface SocialLink {
   name: string
@@ -109,52 +140,6 @@ const courses = ref([
     title: 'Outros cursos',
     platform: 'Várias',
     link: 'https://drive.google.com/drive/folders/1FE-IC0uWjHRToY2LgBSTaR5_KMPnyXvo',
-  },
-  {
-    title: 'Outros cursos',
-    platform: 'Várias',
-    link: 'https://drive.google.com/drive/folders/1FE-IC0uWjHRToY2LgBSTaR5_KMPnyXvo',
-  },
-  {
-    title: 'Outros cursos',
-    platform: 'Várias',
-    link: 'https://drive.google.com/drive/folders/1FE-IC0uWjHRToY2LgBSTaR5_KMPnyXvo',
-  },
-  {
-    title: 'Outros cursos',
-    platform: 'Várias',
-    link: 'https://drive.google.com/drive/folders/1FE-IC0uWjHRToY2LgBSTaR5_KMPnyXvo',
-  },
-  {
-    title: 'Outros cursos',
-    platform: 'Várias',
-    link: 'https://drive.google.com/drive/folders/1FE-IC0uWjHRToY2LgBSTaR5_KMPnyXvo',
-  },
-  {
-    title: 'Outros cursos',
-    platform: 'Várias',
-    link: 'https://drive.google.com/drive/folders/1FE-IC0uWjHRToY2LgBSTaR5_KMPnyXvo',
-  },
-])
-
-const blogPosts = ref([
-  { title: 'Melhores práticas em Vue.js', date: 'Jan 2024', link: 'https://medium.com/seuartigo1' },
-  {
-    title: 'Dicas para desenvolvedores iniciantes',
-    date: 'Fev 2024',
-    link: 'https://medium.com/seuartigo2',
-  },
-  { title: 'Melhores práticas em Vue.js', date: 'Jan 2024', link: 'https://medium.com/seuartigo1' },
-  {
-    title: 'Dicas para desenvolvedores iniciantes',
-    date: 'Fev 2024',
-    link: 'https://medium.com/seuartigo2',
-  },
-  { title: 'Melhores práticas em Vue.js', date: 'Jan 2024', link: 'https://medium.com/seuartigo1' },
-  {
-    title: 'Dicas para desenvolvedores iniciantes',
-    date: 'Fev 2024',
-    link: 'https://medium.com/seuartigo2',
   },
 ])
 

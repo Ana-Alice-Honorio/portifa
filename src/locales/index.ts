@@ -29,7 +29,7 @@ const messages = {
       cards: {
         title: 'Aprendizado & Conteúdo',
         courses: 'Cursos Realizados',
-        see: '<a href="https://github.com/Ana-Alice-Honorio" target="_blank"> Ver Curso</a>',
+        see: 'Ver Curso',
       },
     },
     about: {
@@ -41,7 +41,8 @@ const messages = {
     projects: {
       title: 'Projetos recentes',
       subtitle:
-        'Aqui estão alguns dos meus projetos mais recentes. <a href="https://github.com/Ana-Alice-Honorio" target="_blank">Clique</a> para ver os demais.',
+        'Aqui estão alguns dos meus projetos mais recentes onde pude colocar minhas <strong>habilidades</strong> em prática. Existem projetos onde explorei o <strong>frontend</strong>, a área de <strong>UI/UX</strong>, o <strong>backend</strong> e a <strong>infr</strong>. Ambos com olhar para a <strong>acessibilidade</strong>.',
+      link: ' <a href="https://github.com/Ana-Alice-Honorio" target="_blank">Clique</a> para ver os demais.',
       github: 'Código',
       deploy: 'Deploy',
     },

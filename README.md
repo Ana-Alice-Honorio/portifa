@@ -33,6 +33,8 @@ Este projeto tem como objetivo ser meu portfólio como desenvolvedora web. Nele 
 - [Prettier](https://prettier.io/) para formatação de código
 - [Vite](https://vite.dev/guide/) para rapidez no build
 - [Vue i18n](https://vue-i18n.intlify.dev/) para internalização de texto
+- [Axios](https://www.npmjs.com/package/axios) - para consumo de dados
+- [XML-JS](https://www.npmjs.com/package/xml-js) - usado para integrar os dados do blog medium
 
 ## 🛠 Recomendação de Setup e IDE
 

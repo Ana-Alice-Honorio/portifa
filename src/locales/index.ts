@@ -30,6 +30,8 @@ const messages = {
         title: 'Aprendizado & Conteúdo',
         courses: 'Cursos Realizados',
         see: 'Ver certificado',
+        blog: 'Últimos Artigos',
+        medium: 'Ler no Medium',
       },
     },
     about: {

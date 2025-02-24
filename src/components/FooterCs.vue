@@ -23,15 +23,19 @@
           </v-col>
 
           <v-col cols="12" md="6">
-            <h3>Últimos Artigos</h3>
-            <v-list>
+            <h3>{{ $t('footer.cards.blog') }}</h3>
+            <v-list class="list">
               <v-list-item v-for="post in blogPosts" :key="post.title">
                 <v-list-item-title>
-                  <strong>{{ post.title }}</strong>
+                  <h5 class="title">
+                    {{ post.title }}
+                  </h5>
                 </v-list-item-title>
                 <v-list-item-subtitle>{{ post.date }}</v-list-item-subtitle>
                 <v-list-item-subtitle>
-                  <a :href="post.link" target="_blank">Ler no Medium</a>
+                  <a :href="post.link" target="_blank" class="link">{{
+                    $t('footer.cards.medium')
+                  }}</a>
                 </v-list-item-subtitle>
               </v-list-item>
             </v-list>
@@ -196,6 +200,7 @@ const socialLinks = ref<SocialLink[]>([
 .footer-container h1 {
   font-family: 'Capriola', 'sans-serif';
   font-size: 25px;
+  padding-top: 45px;
 }
 
 .link {

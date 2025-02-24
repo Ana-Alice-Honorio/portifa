@@ -1,18 +1,22 @@
 <template>
   <section class="footer-container">
     <v-row class="d-flex flex-column" align="center" id="contact">
-      <h2 class="text-center">{{ $t('footer.cards.title') }}</h2>
+      <h1>{{ $t('footer.cards.title') }}</h1>
       <v-container class="learning-section">
         <v-row>
           <v-col cols="12" md="6">
             <h3>{{ $t('footer.cards.courses') }}</h3>
-            <v-list>
+            <v-list class="list">
               <v-list-item v-for="course in courses" :key="course.title">
                 <v-list-item-title>
-                  <strong>{{ course.title }}</strong> - {{ course.platform }}
+                  <h5 class="title">
+                    {{ course.title }} - <strong class="platform">{{ course.platform }}</strong>
+                  </h5>
                 </v-list-item-title>
                 <v-list-item-subtitle>
-                  <a :href="course.link" target="_blank">{{ $t('footer.cards.see') }}</a>
+                  <a :href="course.link" target="_blank" class="link">{{
+                    $t('footer.cards.see')
+                  }}</a>
                 </v-list-item-subtitle>
               </v-list-item>
             </v-list>
@@ -123,7 +127,7 @@ const courses = ref([
   },
   {
     title: 'Fundamentos AWS',
-    platform: 'Escola da NUvem',
+    platform: 'Escola da Nuvem',
     link: 'https://drive.google.com/file/d/195iy8XTFsr0kqf24TL0mCCIa7rANPyNf/view',
   },
   {
@@ -135,6 +139,31 @@ const courses = ref([
     title: 'Desenvolvimento Frontend',
     platform: 'Trybe',
     link: 'https://drive.google.com/file/d/1HFBioHBSRIBHB5Ofe--iR6xd0J0LS5H5/view',
+  },
+  {
+    title: 'Vue 3 - explorando o framework',
+    platform: 'Alura',
+    link: 'https://drive.google.com/file/d/1HXj5ybFRZYEeGDXdW_W1aWH_yLuDzr-B/view?usp=sharing',
+  },
+  {
+    title: 'Vue 3 - avançando com o framework',
+    platform: 'Alura',
+    link: 'https://drive.google.com/file/d/1HYWJJdYfHqdJGa2TEDmZW-jvBvVcH8p_/view?usp=sharing',
+  },
+  {
+    title: 'SEO - otimização de sites',
+    platform: 'Alura',
+    link: 'https://drive.google.com/file/d/1HbD3REW4-gBrYamMuN2YDL9D2tfR6NkK/view?usp=sharing',
+  },
+  {
+    title: 'Bootcamp Frontend',
+    platform: 'Italents',
+    link: 'https://drive.google.com/file/d/1yaXzeGva2hcoClnoUM7143-fjF6A8Oqo/view?usp=sharing',
+  },
+  {
+    title: 'Docker - criando e gerenciando conteiners',
+    platform: 'Alura',
+    link: 'https://drive.google.com/file/d/1yrQmeHKufFur2eGJyzbcp9gLw9oKpC6i/view?usp=sharing',
   },
   {
     title: 'Outros cursos',
@@ -157,12 +186,52 @@ const socialLinks = ref<SocialLink[]>([
   background: #f5f5f5;
 }
 
-.learning-section h3 {
-  margin-bottom: 16px;
+.footer-container h3 {
+  font-family:
+    'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+    sans-serif;
+  font-size: 20px;
 }
-.learning-section h2 {
+
+.footer-container h1 {
   font-family: 'Capriola', 'sans-serif';
   font-size: 25px;
+}
+
+.link {
+  text-decoration: none;
+  color: blue;
+}
+
+.list {
+  position: relative;
+  background-image: url('../assets/images/back.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.list::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+}
+
+.title {
+  font-family:
+    'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+    sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.platform {
+  font-weight: bold !important;
 }
 
 .social-icons {

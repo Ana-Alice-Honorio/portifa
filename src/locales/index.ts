@@ -13,7 +13,7 @@ const messages = {
         home: 'Home',
         about: 'Sobre',
         projects: 'Projetos',
-        contact: 'Contato',
+        contact: 'Cursos/Blog',
       },
     },
     hero: {
@@ -29,7 +29,7 @@ const messages = {
       cards: {
         title: 'Aprendizado & Conteúdo',
         courses: 'Cursos Realizados',
-        see: 'Ver Curso',
+        see: 'Ver certificado',
       },
     },
     about: {

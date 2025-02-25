@@ -63,7 +63,7 @@
 
           <v-btn
             variant="flat"
-            :href="'/docs/Ana.Alice.Honorio-Frontend.pdf'"
+            :href="'/docs/Ana.Alice.Honorio.pdf'"
             target="_blank"
             download
             class="btn"

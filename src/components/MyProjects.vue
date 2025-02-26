@@ -62,7 +62,7 @@ const projects = ref<Project[]>([
     name: 'Linktree',
     deployLink: 'https://geek-in-code.vercel.app/',
     githubLink: 'https://github.com/Ana-Alice-Honorio/linktree-insta',
-    image: 'https://github.com/Ana-Alice-Honorio/linktree-insta/raw/main/assets/images/image.png',
+    image: 'src/assets/images/linktree.png',
   },
   {
     name: 'Books Store',
@@ -84,15 +84,15 @@ const projects = ref<Project[]>([
   },
   {
     name: 'Deep Space',
-    deployLink: 'https://deploy-projeto2.com',
+    deployLink: 'https://deep-space-store-nine.vercel.app',
     githubLink: 'https://github.com/Ana-Alice-Honorio/deep-space-store',
-    image: 'https://github.com/Ana-Alice-Honorio/coinWise/raw/main/public/coin%20wise.png',
+    image: 'src/assets/images/deep-space.png',
   },
   {
     name: 'EcoVue',
-    deployLink: 'https://deploy-projeto2.com',
+    deployLink: 'https://eco-vue.vercel.app',
     githubLink: 'https://github.com/Ana-Alice-Honorio/EcoVue',
-    image: 'https://github.com/Ana-Alice-Honorio/coinWise/raw/main/public/coin%20wise.png',
+    image: 'src/assets/images/ecovue.png',
   },
 ])
 </script>

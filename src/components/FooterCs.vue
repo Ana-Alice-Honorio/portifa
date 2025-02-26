@@ -84,6 +84,20 @@ interface BlogPost {
   link: string
 }
 
+interface MediumFeed {
+  rss: {
+    channel: {
+      item: MediumPost[]
+    }
+  }
+}
+
+interface MediumPost {
+  title?: { _cdata?: string; _text?: string }
+  link?: { _text?: string }
+  pubDate?: { _text?: string }
+}
+
 const blogPosts = ref<BlogPost[]>([])
 
 const fetchMediumPosts = async () => {
@@ -93,12 +107,14 @@ const fetchMediumPosts = async () => {
         encodeURIComponent('https://medium.com/feed/@anaalicehonorio'),
     )
     const data = xml2js.xml2json(response.data.contents, { compact: true, spaces: 2 })
-    const parsedData = JSON.parse(data)
+    const parsedData: MediumFeed = JSON.parse(data)
 
     blogPosts.value = parsedData.rss.channel.item.slice(0, 10).map((post) => ({
-      title: post.title._cdata || post.title._text,
-      link: post.link._text,
-      date: new Date(post.pubDate._text).toLocaleDateString('pt-BR'),
+      title: post.title?._cdata || post.title?._text || 'Título Desconhecido',
+      link: post.link?._text || '#',
+      date: post.pubDate?._text
+        ? new Date(post.pubDate._text).toLocaleDateString('pt-BR')
+        : 'Data Desconhecida',
     }))
   } catch (error) {
     console.error('Erro ao buscar posts do Medium:', error)

@@ -20,7 +20,7 @@
 Este projeto tem como objetivo ser meu portfólio como desenvolvedora web. Nele trago minhas experiências, parte técnica e comportamental. Projetos feitos, conquistas, contribuições e melhorias ao longo dessa trajetória.
 
 <div  align="center">
-  <img src="./src/assets/images/image.png" width="500px" />
+  <img src="./src/assets/images/portifa.gif" width="500px" />
 </div>
 
 ## 💻 Tecnologias

@@ -12,21 +12,21 @@ body {
 
 @font-face {
   font-family: 'MongoAC';
-  src: url('@src/assets/fonts/Mango-Regular.otf') format('opentype');
+  src: url('@/src/assets/fonts/Mango-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Capriola';
-  src: url('@src/assets/fonts/Capriola-Regular.ttf') format('truetype');
+  src: url('@/src/assets/fonts/Capriola-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Chewy';
-  src: url('@src/assets/fonts/Chewy-Regular.ttf') format('truetype');
+  src: url('@/src/assets/fonts/Chewy-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

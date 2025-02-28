@@ -1,12 +1,12 @@
 <template>
   <section class="footer-container">
     <v-row class="d-flex flex-column" align="center" id="contact">
-      <h1>{{ $t('footer.cards.title') }}</h1>
+      <h1 class="text-center">{{ $t('footer.cards.title') }}</h1>
       <v-container class="learning-section">
-        <v-row>
-          <v-col cols="12" md="6">
+        <v-row class="flex-column flex-md-row">
+          <v-col cols="12" md="6" class="text-center">
             <h3>{{ $t('footer.cards.courses') }}</h3>
-            <v-list class="list">
+            <v-list class="list w-100">
               <v-list-item v-for="course in courses" :key="course.title">
                 <v-list-item-title>
                   <h5 class="title">
@@ -22,14 +22,12 @@
             </v-list>
           </v-col>
 
-          <v-col cols="12" md="6">
+          <v-col cols="12" md="6" class="text-center">
             <h3>{{ $t('footer.cards.blog') }}</h3>
-            <v-list class="list">
+            <v-list class="list w-100">
               <v-list-item v-for="post in blogPosts" :key="post.title">
                 <v-list-item-title>
-                  <h5 class="title">
-                    {{ post.title }}
-                  </h5>
+                  <h5 class="title">{{ post.title }}</h5>
                 </v-list-item-title>
                 <v-list-item-subtitle>{{ post.date }}</v-list-item-subtitle>
                 <v-list-item-subtitle>
@@ -43,8 +41,8 @@
         </v-row>
       </v-container>
 
-      <v-col cols="12" md="12">
-        <v-footer class="body-footer text-center d-flex flex-column">
+      <v-col cols="12">
+        <v-footer class="body-footer text-center d-flex flex-column w-100">
           <div class="social-icons">
             <v-btn
               v-for="icon in socialLinks"
@@ -225,11 +223,11 @@ const socialLinks = ref<SocialLink[]>([
 }
 
 .list {
-  position: relative;
   background-image: url('../assets/images/back.png');
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
+  width: 100%;
 }
 
 .list::before {
@@ -264,6 +262,7 @@ const socialLinks = ref<SocialLink[]>([
 .body-footer {
   background: linear-gradient(90deg, rgb(134, 101, 186), #3f51b5);
   color: white;
+  width: 100%;
 }
 
 .footer-container {
@@ -271,5 +270,6 @@ const socialLinks = ref<SocialLink[]>([
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 </style>

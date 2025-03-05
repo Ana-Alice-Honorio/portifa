@@ -232,7 +232,7 @@ const socialLinks = ref<SocialLink[]>([
 
 .list {
   position: relative;
-  background-image: url('../assets/images/back.png');
+  background-image: url('/images/back.png');
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;

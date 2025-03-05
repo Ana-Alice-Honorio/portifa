@@ -26,15 +26,20 @@
             <h3>{{ $t('footer.cards.blog') }}</h3>
             <v-list class="list w-100">
               <v-list-item v-for="post in blogPosts" :key="post.title">
-                <v-list-item-title>
-                  <h5 class="title">{{ post.title }}</h5>
-                </v-list-item-title>
-                <v-list-item-subtitle>{{ post.date }}</v-list-item-subtitle>
-                <v-list-item-subtitle>
-                  <a :href="post.link" target="_blank" class="link">{{
-                    $t('footer.cards.medium')
-                  }}</a>
-                </v-list-item-subtitle>
+                <v-list-item-content class="post-item">
+                  <v-list-item-title>
+                    <h5 class="title">
+                      {{ post.title.length > 30 ? post.title.slice(0, 30) + '...' : post.title }} -
+                      <span class="date">{{ post.date }}</span>
+                    </h5>
+                  </v-list-item-title>
+
+                  <v-list-item-subtitle>
+                    <a :href="post.link" target="_blank" class="link">{{
+                      $t('footer.cards.medium')
+                    }}</a>
+                  </v-list-item-subtitle>
+                </v-list-item-content>
               </v-list-item>
             </v-list>
           </v-col>
@@ -223,6 +228,7 @@ const socialLinks = ref<SocialLink[]>([
 }
 
 .list {
+  position: relative;
   background-image: url('../assets/images/back.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -247,6 +253,19 @@ const socialLinks = ref<SocialLink[]>([
     sans-serif;
   font-size: 15px;
   font-weight: 100;
+  display: inline-block;
+}
+
+.date {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 10px;
+}
+
+.link {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #1e88e5;
 }
 
 .platform {
@@ -270,6 +289,17 @@ const socialLinks = ref<SocialLink[]>([
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+}
+
+@media (max-width: 600px) {
+  .social-icons {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .list {
+    margin: 0 auto;
+    max-width: 100%;
+  }
 }
 </style>

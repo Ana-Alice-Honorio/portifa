@@ -69,10 +69,12 @@ const scrollTo = (id: string) => {
 
 <style scoped>
 .header {
-  padding: 8px;
   position: fixed;
-  left: 0;
-  z-index: 100;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: linear-gradient(90deg, rgb(134, 101, 186), #3f51b5);
+  color: white;
 }
 
 .name {

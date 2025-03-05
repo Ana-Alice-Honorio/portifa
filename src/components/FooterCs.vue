@@ -10,7 +10,10 @@
               <v-list-item v-for="course in courses" :key="course.title">
                 <v-list-item-title>
                   <h5 class="title">
-                    {{ course.title }} - <strong class="platform">{{ course.platform }}</strong>
+                    {{
+                      course.title.length > 30 ? course.title.slice(0, 30) + '...' : course.title
+                    }}
+                    - <strong class="platform">{{ course.platform }}</strong>
                   </h5>
                 </v-list-item-title>
                 <v-list-item-subtitle>
@@ -299,7 +302,16 @@ const socialLinks = ref<SocialLink[]>([
 
   .list {
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 90%;
+  }
+
+  .learning-section {
+    padding: 40px 10px;
+  }
+
+  .footer-container h1 {
+    font-size: 22px;
+    text-align: center;
   }
 }
 </style>

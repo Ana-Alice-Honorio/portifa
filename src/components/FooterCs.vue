@@ -13,7 +13,7 @@
                     {{
                       course.title.length > 30 ? course.title.slice(0, 30) + '...' : course.title
                     }}
-                    - <strong class="platform">{{ course.platform }}</strong>
+                    <strong class="platform">- {{ course.platform }}</strong>
                   </h5>
                 </v-list-item-title>
                 <v-list-item-subtitle>
@@ -312,6 +312,9 @@ const socialLinks = ref<SocialLink[]>([
   .footer-container h1 {
     font-size: 22px;
     text-align: center;
+  }
+  .platform {
+    display: none;
   }
 }
 </style>

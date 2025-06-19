@@ -94,6 +94,9 @@ interface Experiences {
 }
 
 const technologies = ref<Technology[]>([
+  { name: 'Angular.js', icon: 'mdi-angular', color: '#dd0031' },
+  { name: 'React.js', icon: 'mdi-react', color: '#61dafb' },
+  { name: 'Node.js', icon: 'mdi-nodejs', color: '#8CC84B' },
   { name: 'Vue.js', icon: 'mdi-vuejs', color: '#42b883' },
   { name: 'JavaScript', icon: 'mdi-language-javascript', color: '#d0b13b' },
   { name: 'TypeScript', icon: 'mdi-language-typescript', color: '#3178c6' },
@@ -110,9 +113,16 @@ const technologies = ref<Technology[]>([
 
 const experiences = ref<Experiences[]>([
   {
+    from: 'NuageIT',
+    message: 'Desenvolvimento de aplicações web fullstack.',
+    dateRange: '04/2025 até o momento',
+    technologies: ['Angular.js', 'Javascript', 'CSS', 'HTML'],
+    color: 'deep-purple-lighten-1',
+  },
+  {
     from: 'Comunix',
     message: 'Desenvolvimento de aplicações web frontend.',
-    dateRange: '09/2023 até o momento',
+    dateRange: '09/2023 a 04/2025',
     technologies: ['Vue.js', 'Javascript', 'Node.js', 'Docker', 'Linux'],
     color: 'deep-purple-lighten-1',
   },

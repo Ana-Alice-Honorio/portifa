@@ -112,7 +112,7 @@ const experiences = ref<Experiences[]>([
     message: 'Desenvolvimento de aplicações web fullstack.',
     dateRange: '04/2025 até o momento',
     technologies: ['Angular.js', 'Javascript', 'CSS', 'HTML'],
-    color: 'deep-purple-lighten-1',
+    color: 'green',
   },
   {
     from: 'Comunix',

@@ -11,10 +11,7 @@
 
       <v-col cols="12" md="6" class="d-flex justify-center">
         <div class="gif-frame">
-          <img
-            src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHBxa3VqNmNqYmpsMzhoYnBpZG1iNm85d3dobnYzNmU4emw2ZDgydyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6XX4V0O8a0xdS/giphy.gif"
-            alt="GIF animado"
-          />
+          <img src="/images/study.gif" alt="GIF animado" />
         </div>
       </v-col>
     </v-row>

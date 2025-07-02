@@ -4,12 +4,7 @@
       <v-row align="center">
         <v-col cols="12" md="6">
           <v-card class="mx-auto" max-width="400">
-            <v-img
-              color="surface-variant"
-              height="200"
-              src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExczlxbTBzOHJsZDByODRyYmVua3F6bmR6MXoyYm9jZjF1ZjI3dWRmdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kBa3lyXcK5pcOJDUkW/giphy.gif"
-              cover
-            >
+            <v-img color="surface-variant" height="200" src="/images/cat.gif" cover>
               <v-toolbar color="transparent">
                 <v-toolbar-title class="text-h6"></v-toolbar-title>
               </v-toolbar>

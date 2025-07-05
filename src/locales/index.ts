@@ -18,7 +18,7 @@ const messages = {
     },
     hero: {
       title: 'Oi, eu sou Alice!',
-      text: 'Sou uma desenvolvedora apaixonada por tecnologia, com experiência em desenvolvimento web. Trabalho com <strong>Vue.js</strong/>, <strong> Javascript </strong/> e outras tecnologias para criar aplicações incríveis.',
+      text: 'Sou uma desenvolvedora apaixonada por tecnologia, com experiência em desenvolvimento web. Trabalho com <strong> Angular.js</strong>, <strong>Vue.js</strong/>, <strong> Javascript </strong/> e outras tecnologias para criar aplicações incríveis.',
       texttwo:
         'Tenho experiência com <strong>desenvolvimento de software</strong>, <strong>resolução de problemas</strong> complexos e atendimento ao usuário do software.',
     },
@@ -32,18 +32,19 @@ const messages = {
         see: 'Ver certificado',
         blog: 'Últimos Artigos',
         medium: 'Ler no Medium',
+        more: 'Mais artigos',
       },
     },
     about: {
       xp: 'Experiências',
       curriculum: 'Currículo',
       techs: 'Tecnologias:',
-      text: 'Sou uma profissional da área de TI cursando o 3° período de <strong>Análise e Desenvolvimento de Sistemas</strong>, onde aprendo sobre as melhores práticas e <strong>metodologias</strong> de desenvolvimento de software. Atualmente, estou me aprimorando e tenho um grande interesse em <strong>infra/DevOps</strong>, buscando sempre me atualizar e expandir meus conhecimentos nessa área.',
+      text: 'Sou uma profissional da área de TI cursando <strong>Análise e Desenvolvimento de Sistemas</strong>, onde aprendo sobre as melhores práticas e <strong>metodologias</strong> de desenvolvimento de software. Estou cursando uma pós em <strong>Segurança da Informação</strong>, buscando sempre me atualizar e expandir meus conhecimentos nessa área.',
     },
     projects: {
       title: 'Projetos recentes',
       subtitle:
-        'Aqui estão alguns dos meus projetos mais recentes onde pude colocar minhas <strong>habilidades</strong> em prática. Existem projetos onde explorei o <strong>frontend</strong>, a área de <strong>UI/UX</strong>, o <strong>backend</strong> e a <strong>infr</strong>. Ambos com olhar para a <strong>acessibilidade</strong>.',
+        'Aqui estão alguns dos meus projetos mais recentes onde pude colocar minhas <strong>habilidades</strong> em prática. Existem projetos onde explorei o <strong>frontend</strong>, a área de <strong>UI/UX</strong>, o <strong>backend</strong>. Ambos com olhar para a <strong>acessibilidade</strong>.',
       link: ' <a href="https://github.com/Ana-Alice-Honorio" target="_blank">Clique</a> para ver os demais.',
       github: 'Código',
       deploy: 'Deploy',

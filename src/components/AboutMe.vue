@@ -104,6 +104,10 @@ const technologies = ref<Technology[]>([
   { name: 'Linux', icon: 'mdi-linux', color: '#323b4f' },
   { name: 'HTML', icon: 'mdi-language-html5', color: '#D2691E' },
   { name: 'CSS', icon: 'mdi-language-css3', color: '#1E90FF' },
+  { name: 'AWS', icon: 'mdi-aws', color: '#FF9900' },
+  { name: 'GitHub', icon: 'mdi-github', color: '#181717' },
+  { name: 'GitLab', icon: 'mdi-gitlab', color: '#FC6D26' },
+  { name: 'Bitbucket', icon: 'mdi-bitbucket', color: '#0052CC' },
 ])
 
 const experiences = ref<Experiences[]>([
@@ -111,7 +115,7 @@ const experiences = ref<Experiences[]>([
     from: 'NuageIT',
     message: 'Desenvolvimento de aplicações web fullstack.',
     dateRange: '04/2025 até o momento',
-    technologies: ['Angular.js', 'Javascript', 'CSS', 'HTML'],
+    technologies: ['Angular.js', 'Javascript', 'CSS', 'HTML', 'AWS'],
     color: 'green',
   },
   {

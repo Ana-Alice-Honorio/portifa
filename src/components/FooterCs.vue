@@ -47,6 +47,19 @@
             </v-list>
           </v-col>
         </v-row>
+
+        <v-row class="justify-left">
+          <v-col cols="12" md="6" class="text-center mt-4">
+            <h3>{{ $t('footer.cards.more') }}</h3>
+            <v-list class="list w-100">
+              <v-list-item-subtitle>
+                <a href="https://anaalicehonorio.medium.com/" target="_blank" class="link">
+                  {{ $t('footer.cards.medium') }}
+                </a>
+              </v-list-item-subtitle>
+            </v-list>
+          </v-col>
+        </v-row>
       </v-container>
 
       <v-col cols="12">

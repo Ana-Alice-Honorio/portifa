@@ -15,10 +15,22 @@
         </div>
       </v-col>
 
-      <v-col cols="12" md="6" class="d-flex justify-center">
+      <v-col cols="12" md="6" class="hero-media">
         <div class="gif-frame">
           <img src="/images/study.gif" alt="GIF animado" />
         </div>
+
+        <v-btn
+          variant="flat"
+          :href="'/docs/Ana.Alice.Honorio.pdf'"
+          target="_blank"
+          download
+          class="btn"
+        >
+          <v-icon left>mdi-download</v-icon>
+          {{ $t('about.curriculum') }}
+        </v-btn>
+
       </v-col>
     </v-row>
   </v-container>
@@ -54,6 +66,22 @@
   padding-left: 20px;
   display: grid;
   gap: 8px;
+}
+
+.hero-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn {
+  text-transform: capitalize;
+  font-family: 'Capriola', sans-serif;
+  max-width: 200px;
+  background: linear-gradient(90deg, rgb(134, 101, 186), #3f51b5);
+  color: white;
 }
 
 .gif-frame {

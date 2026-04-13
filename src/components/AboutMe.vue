@@ -56,16 +56,6 @@
             </v-tooltip>
           </div>
 
-          <v-btn
-            variant="flat"
-            :href="'/docs/Ana.Alice.Honorio.pdf'"
-            target="_blank"
-            download
-            class="btn"
-          >
-            <v-icon left>mdi-download</v-icon>
-            {{ $t('about.curriculum') }}
-          </v-btn>
         </v-col>
       </v-row>
     </v-container>
@@ -166,14 +156,6 @@ const experiences = ref<Experiences[]>([
   font-size: 16px;
   color: #555;
   line-height: 1.6;
-}
-
-.btn {
-  text-transform: capitalize;
-  font-family: 'Capriola', sans-serif;
-  max-width: 200px;
-  background: linear-gradient(90deg, rgb(134, 101, 186), #3f51b5);
-  color: white;
 }
 
 .tech-icons {

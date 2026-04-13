@@ -224,7 +224,6 @@ const socialLinks = ref<SocialLink[]>([
   { name: 'GitHub', icon: 'mdi-github', url: 'https://github.com/Ana-Alice-Honorio' },
   { name: 'Medium', icon: 'mdi-alpha-m-circle', url: 'https://medium.com/@anaalicehonorio' },
   { name: 'LinkedIn', icon: 'mdi-linkedin', url: 'https://www.linkedin.com/in/anaalicehonorio' },
-  { name: 'Instagram', icon: 'mdi-instagram', url: 'https://instagram.com/geek_in_code' },
 ])
 </script>
 

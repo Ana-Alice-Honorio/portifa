@@ -31,7 +31,7 @@ const messages = {
     },
     footer: {
       title: 'Construído com ❤️ por ',
-      me: 'mim',
+      me: 'Ana Alice Honório',
       conect: '. Conecte-se comigo nas redes sociais!',
       cards: {
         title: 'Aprendizado & Conteúdo',
@@ -46,12 +46,12 @@ const messages = {
       xp: 'Experiências',
       curriculum: 'Currículo',
       techs: 'Tecnologias:',
-      text: 'Sou uma profissional da área de TI cursando <strong>Análise e Desenvolvimento de Sistemas</strong>, onde aprendo sobre as melhores práticas e <strong>metodologias</strong> de desenvolvimento de software. Estou cursando uma pós em <strong>Segurança da Informação</strong>, buscando sempre me atualizar e expandir meus conhecimentos nessa área.',
+      text: 'Sou uma profissional da área de TI cursando último período do curso de <strong>Análise e Desenvolvimento de Sistemas</strong>, onde aprendo sobre as melhores práticas e metodologias de desenvolvimento de software. Finalizei uma pós em <strong>Segurança da Informação</strong> e iniciei uma pós em <strong>Direito Digital</strong>, buscando sempre me atualizar e expandir meus conhecimentos nessa área.',
     },
     projects: {
       title: 'Projetos recentes',
       subtitle:
-        'Aqui estão alguns dos meus projetos mais recentes onde pude colocar minhas <strong>habilidades</strong> em prática. Existem projetos onde explorei o <strong>frontend</strong>, a área de <strong>UI/UX</strong>, o <strong>backend</strong>. Ambos com olhar para a <strong>acessibilidade</strong>.',
+        'Aqui estão alguns dos meus projetos mais recentes onde pude colocar minhas <strong>habilidades</strong> em prática. Existem projetos onde explorei o <strong>frontend</strong>, a área de <strong>UI/UX</strong>, o <strong>backend</strong>, <strong>cloud</strong> e <strong>IAs</strong>. Ambos com olhar para a <strong>acessibilidade</strong> e <strong>segurança</strong>.',
       link: ' <a href="https://github.com/Ana-Alice-Honorio" target="_blank">Clique</a> para ver os demais.',
       github: 'Código',
       deploy: 'Deploy',

@@ -95,7 +95,6 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import axios from 'axios'
-import xml2js from 'xml-js'
 
 interface BlogPost {
   title: string
@@ -103,37 +102,47 @@ interface BlogPost {
   link: string
 }
 
-interface MediumFeed {
-  rss: {
-    channel: {
-      item: MediumPost[]
-    }
-  }
+interface Rss2JsonResponse {
+  status: string
+  items?: MediumPost[]
 }
 
 interface MediumPost {
-  title?: { _cdata?: string; _text?: string }
-  link?: { _text?: string }
-  pubDate?: { _text?: string }
+  title?: string
+  link?: string
+  pubDate?: string
 }
 
 const blogPosts = ref<BlogPost[]>([])
 
 const fetchMediumPosts = async () => {
-  try {
-    const response = await axios.get(
-      'https://api.allorigins.win/get?url=' +
-        encodeURIComponent('https://medium.com/feed/@anaalicehonorio'),
-    )
-    const data = xml2js.xml2json(response.data.contents, { compact: true, spaces: 2 })
-    const parsedData: MediumFeed = JSON.parse(data)
+  const feedUrl = 'https://medium.com/feed/@anaalicehonorio'
+  const endpoints = [
+    `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feedUrl)}`,
+    `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent('https://anaalicehonorio.medium.com/feed')}`,
+  ]
 
-    blogPosts.value = parsedData.rss.channel.item.slice(0, 10).map((post) => ({
-      title: post.title?._cdata || post.title?._text || 'Título Desconhecido',
-      link: post.link?._text || '#',
-      date: post.pubDate?._text
-        ? new Date(post.pubDate._text).toLocaleDateString('pt-BR')
-        : 'Data Desconhecida',
+  try {
+    let items: MediumPost[] = []
+
+    for (const endpoint of endpoints) {
+      try {
+        const response = await axios.get<Rss2JsonResponse>(endpoint, { timeout: 10000 })
+        if (response.data.status === 'ok' && Array.isArray(response.data.items)) {
+          items = response.data.items
+          break
+        }
+      } catch {
+        // Try next endpoint when this one is unavailable.
+      }
+    }
+
+    blogPosts.value = items.slice(0, 10).map((post) => ({
+      title: post.title || 'Titulo desconhecido',
+      link: post.link || '#',
+      date: post.pubDate
+        ? new Date(post.pubDate).toLocaleDateString('pt-BR')
+        : 'Data desconhecida',
     }))
   } catch (error) {
     console.error('Erro ao buscar posts do Medium:', error)

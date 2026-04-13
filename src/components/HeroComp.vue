@@ -5,6 +5,12 @@
         <div class="hero-text">
           <h1>{{ $t('hero.title') }}</h1>
           <p v-html="$t('hero.text')"></p>
+          <p class="hero-list-title">{{ $t('hero.listTitle') }}</p>
+          <ul class="hero-list">
+            <li v-html="$t('hero.listFrontend')"></li>
+            <li v-html="$t('hero.listBackend')"></li>
+            <li v-html="$t('hero.listSecurity')"></li>
+          </ul>
           <p v-html="$t('hero.texttwo')"></p>
         </div>
       </v-col>
@@ -36,6 +42,18 @@
   flex-direction: column;
   display: flex;
   gap: 5px;
+}
+
+.hero-list-title {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.hero-list {
+  margin: 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 8px;
 }
 
 .gif-frame {

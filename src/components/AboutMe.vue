@@ -92,6 +92,7 @@ const technologies = ref<Technology[]>([
   { name: 'Angular.js', icon: 'mdi-angular', color: '#dd0031' },
   { name: 'React.js', icon: 'mdi-react', color: '#61dafb' },
   { name: 'Node.js', icon: 'mdi-nodejs', color: '#8CC84B' },
+  { name: 'Python', icon: 'mdi-language-python', color: '#1867c0' },
   { name: 'Vue.js', icon: 'mdi-vuejs', color: '#42b883' },
   { name: 'JavaScript', icon: 'mdi-language-javascript', color: '#d0b13b' },
   { name: 'TypeScript', icon: 'mdi-language-typescript', color: '#3178c6' },

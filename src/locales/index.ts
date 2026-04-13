@@ -18,9 +18,16 @@ const messages = {
     },
     hero: {
       title: 'Oi, eu sou Alice!',
-      text: 'Sou uma desenvolvedora apaixonada por tecnologia, com experiência em desenvolvimento web. Trabalho com <strong> Angular.js</strong>, <strong>Vue.js</strong/>, <strong> Javascript </strong/> e outras tecnologias para criar aplicações incríveis.',
+      text: 'Sou Desenvolvedora de Software com foco em soluções <strong>Fullstack</strong> e <strong>Cloud</strong>. Onde equilibro a entrega de aplicações resilientes com a evolução contínua em arquitetura e segurança da informação.',
+      listTitle: 'O que eu trago para o jogo:',
+      listFrontend:
+        '<strong>Frontend Moderno:</strong> Domínio de ecossistemas Vue.js, Angular e React, focando sempre em performance e experiência do usuário.',
+      listBackend:
+        '<strong>Backend & Cloud:</strong> Experiência no desenvolvimento de APIs com Python e gerenciamento de infraestrutura em nuvem (AWS), utilizando serviços como IAM, Lambda e S3.',
+      listSecurity:
+        '<strong>Segurança e Governança:</strong> Pós-graduanda em Direito Digital, aplico conceitos de proteção de dados, segurança defensiva e conformidade técnica no ciclo de desenvolvimento de software.',
       texttwo:
-        'Tenho experiência com <strong>desenvolvimento de software</strong>, <strong>resolução de problemas</strong> complexos e atendimento ao usuário do software.',
+        'Minha trajetória é marcada pela resolução de problemas complexos, onde a <strong>agilidade</strong> e a <strong>autonomia</strong> são fundamentais. Sou movida por desafios que unem tecnologia de ponta e rigor técnico, o mesmo foco que aplico na minha rotina de estudos e desenvolvimento de projetos pessoais.',
     },
     footer: {
       title: 'Construído com ❤️ por ',

@@ -25,7 +25,7 @@ const messages = {
       listBackend:
         '<strong>Backend & Cloud:</strong> Experiência no desenvolvimento de APIs com Python e gerenciamento de infraestrutura em nuvem (AWS), utilizando serviços como IAM, Lambda e S3.',
       listSecurity:
-        '<strong>Segurança e Governança:</strong> Pós-graduanda em Direito Digital, aplico conceitos de proteção de dados, segurança defensiva e conformidade técnica no ciclo de desenvolvimento de software.',
+        '<strong>Segurança e Governança:</strong> Pós-graduanda em Direito Digital e Segurança da Informação, aplico conceitos de proteção de dados, segurança defensiva e conformidade técnica no ciclo de desenvolvimento de software.',
       texttwo:
         'Minha trajetória é marcada pela resolução de problemas complexos, onde a <strong>agilidade</strong> e a <strong>autonomia</strong> são fundamentais. Sou movida por desafios que unem tecnologia de ponta e rigor técnico, o mesmo foco que aplico na minha rotina de estudos e desenvolvimento de projetos pessoais.',
     },
